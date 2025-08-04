@@ -1,297 +1,225 @@
 import './Design.css';
 import React, { useState } from 'react';
-// import Home from '../../components/Home/Home.jsx';
-// import VerticalHeader from '../../components/VerticalHeader/VerticalHeader';
-// import Footer from '../../components/Footer/Footer.jsx';
-import Home from '../../../components/Home/Home'
-import VerticalHeader from '../../../components/VerticalHeader/VerticalHeader';
-import Footer from '../../../components/Footer/Footer'
+
 const faqData = [
+  
   {
-    question: 'What tools do you use for CRO?',
+    question: 'What is content marketing?',
     answer:
-      'We have a powerful suite of CRO tools that help us measure and evaluate the performance of your site...',
+      'Content marketing is a strategic approach focused on creating and distributing valuable, relevant, and consistent content to attract and retain a clearly defined audience — and, ultimately, to drive profitable customer action.',
   },
   {
-    question: 'What is a CRO audit?',
+    question: 'Why work with a content marketing agency?',
     answer:
-      'A CRO audit is a thorough examination of your website’s current metrics and performance...',
+      'A content marketing agency helps you develop a solid strategy, produce high-quality content, and ensure it reaches your target audience effectively — saving you time while delivering measurable results.',
   },
   {
-    question: 'What is A/B (split) testing?',
+    question: 'What types of content do you create?',
     answer:
-      'A/B testing, or split testing as it is often called, is the process of comparing two or more versions...',
+      'We craft blog posts, whitepapers, case studies, videos, social content, email campaigns, and more — all tailored to your audience and brand voice.',
   },
   {
-    question: 'What is A/B (split) testing?',
+    question: 'How do you measure content performance?',
     answer:
-      'A/B testing, or split testing as it is often called, is the process of comparing two or more versions...',
-  },
-  {
-    question: 'What is A/B (split) testing?',
-    answer:
-      'A/B testing, or split testing as it is often called, is the process of comparing two or more versions...',
-  },
-  {
-    question: 'What is A/B (split) testing?',
-    answer:
-      'A/B testing, or split testing as it is often called, is the process of comparing two or more versions...',
-  },
-  {
-    question: 'What is A/B (split) testing?',
-    answer:
-      'A/B testing, or split testing as it is often called, is the process of comparing two or more versions...',
+      'We track engagement metrics like traffic, conversions, time on page, and lead generation to ensure your content delivers ROI and supports business goals.',
   },
 ];
 
-const Cro = () => {
+const ContentMarketing = () => {
   const [activeIndex, setActiveIndex] = useState(null);
+
   const handleToggle = index => {
     setActiveIndex(activeIndex === index ? null : index);
   };
+
   return (
     <>
-      <Home />
-      
-          <VerticalHeader />
-          
-      <div className="cro-section">
-        {/* Content */}
-        <div className="cro-content">
-          <button className="cro-tag">GROWTH MARKETING</button>
-          <h1 className="cro-heading">
-            Conversion rate optimization agency specialized in making customers
-            stay, care, click, and convert.
+      <div className="content-marketing-section">
+        <div className="content-marketing-content">
+          <button className="content-marketing-tag">CONTENT SERVICES</button>
+          <h1 className="content-marketing-heading">
+            Leading Content Marketing Agency
           </h1>
-          <p className="cro-description">
-            Unlock the potential of your website with tailored Conversion Rate
-            Optimization strategies. Our data-driven approach focuses on
-            continuous testing and refinement to improve user experience,
-            increase engagement, and drive conversions. Let us help you turn
-            visitors into loyal customers.
+          <p className="content-marketing-description">
+            We create compelling, data-driven content strategies that help your
+            brand build trust, generate leads, and drive growth through valuable
+            storytelling.
           </p>
-          <button className="cro-button">
-            Get a Proposal <span className="arrow">→</span>
+          <button className="content-marketing-button">
+            Talk to a Content Expert <span className="arrow">→</span>
           </button>
         </div>
 
-        {/* Image Section */}
-        <div className="cro-image-container">
-          <img src="/public/CRO.webp" alt="CRO" className="cro-image" />
+        <div className="content-marketing-image-container">
+          <img
+            src="public/Content_Marketing.webp"
+            alt="Content Marketing"
+            className="content-marketing-image"
+          />
         </div>
       </div>
-      <div className="cro-title">
-        <span className="first-title">Don’t settle for ordinary.</span>
+
+      <div className="content-marketing-title">
+        <span className="first-title">Stop selling. Start educating.</span>
         <span className="second-title">
-          Partner with <span style={{ color: '#7756ff' }}>extraordinary.</span>{' '}
+          Grow with <span style={{ color: '#7756ff' }}>valuable content.</span>{' '}
         </span>
       </div>
 
-      <div className="cro-second">
-        <div className="cro-second-content-left">
-          <button>WORK WITH POWER</button>
-          <h2>
-            All your hard-earned traffic is wasted effort if it doesn't convert.
-          </h2>
+      <div className="content-marketing-second">
+        <div className="content-marketing-second-content-left">
+          <button>WORK WITH EXPERTS</button>
+          <h2>Why choose a content marketing agency?</h2>
         </div>
-        <div className="cro-second-content-right">
-          <span>
-            ROI doesn’t come from paid ads, social media, or SEO services. It
-            comes from making the sale.
-          </span>
-          <span>
-            If there’s a chasm between your traffic and conversion numbers, CRO
-            closes it. That’s why Power Digital makes CRO a top priority in your
-            overall marketing strategy – even if it’s not within scope.
-          </span>
-          <span>
-            From landing page copy to call-to-actions, we craft a smooth and
-            persuasive customer experience that stops leads from leaking out of
-            your funnel.
-          </span>
-          <button>Get in Touch</button>
-        </div>
-      </div>
-      <div className="cro-second-boxes">
-        <div className="first-cro-box">
-          <div className="logo-boxes">
-            <img src="public/Services_AmazonMarketing_100.webp" alt="" />
-          </div>
-          <div className="box-contents">
-            <p>Eliminate Customer Apathy</p>
-            <p>
-              Turn passive interest into active engagement. With strategic CRO,
-              we transform lukewarm leads into enthusiastic customers who are
-              eager to take the next step. Every interaction is optimized to
-              capture attention, sustain interest, and drive conversions,
-              ensuring that no opportunity is wasted.
-            </p>
-          </div>
-        </div>
-        <div className="first-cro-box">
-          <div className="logo-boxes">
-            <img src="public/service-icon.webp" alt="" />
-          </div>
-          <div className="box-contents">
-            <p>Eliminate Customer Apathy</p>
-            <p>
-              Turn passive interest into active engagement. With strategic CRO,
-              we transform lukewarm leads into enthusiastic customers who are
-              eager to take the next step. Every interaction is optimized to
-              capture attention, sustain interest, and drive conversions,
-              ensuring that no opportunity is wasted.
-            </p>
-          </div>
-        </div>
-        <div className="first-cro-box">
-          <div className="logo-boxes">
-            <img src="public/Capabilities_FullService_100.webp" alt="" />
-          </div>
-          <div className="box-contents">
-            <p>Eliminate Customer Apathy</p>
-            <p>
-              Turn passive interest into active engagement. With strategic CRO,
-              we transform lukewarm leads into enthusiastic customers who are
-              eager to take the next step. Every interaction is optimized to
-              capture attention, sustain interest, and drive conversions,
-              ensuring that no opportunity is wasted.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div className="third-cro">
-        <div className="button">OUR CRO SEVICES</div>
-        <div className="service-contents">
-          <h2>
-            Obliterate the divide between traffic and revenue with CRO processes
-            proven to work.
-          </h2>
-          <span>
-            Our approach to CRO takes your entire sales funnel into
-            consideration and doesn’t stop until you see significant ROI.
-          </span>
-        </div>
-      </div>
-      <div className="service-steps">
-        <div className="steps">
-          <h2>01 Analysis</h2>
-          <p>
-            Before a contract is ever signed, we pop the hood on your business
-            with a detailed audit. You get an in-depth report on what’s working,
-            what’s not, and what opportunities we’ve found for serious growth.
-          </p>
-        </div>
-        <div className="steps">
-          <h2>02 Strategy</h2>
+        <div className="content-marketing-second-content-right">
           <p>
             <span>
-              After we’ve painted a picture of current obstacles and missed
-              opportunities, we craft a roadmap of solutions to reach your
-              goals.
+              Building authority and trust online requires consistent, quality
+              content that resonates with your audience.
             </span>
-            Your strategy is customized across digital marketing channels for a
-            full, holistic approach.
+            <span>
+              Partner with a team that understands strategy, storytelling, and
+              measurable results.
+            </span>
+          </p>
+
+          <button>Start Your Strategy</button>
+        </div>
+      </div>
+
+      <div className="content-marketing-second-boxes">
+        <div className="first-content-marketing-box">
+          <div className="logo-boxes">
+            <img src="public/Content_Visibility.webp" alt="" />
+          </div>
+          <div className="box-contents">
+            <p>Increase Visibility</p>
+            <p>
+              Get found by your ideal customers with SEO-optimized content that
+              ranks and converts.
+            </p>
+          </div>
+        </div>
+        <div className="first-content-marketing-box">
+          <div className="logo-boxes">
+            <img src="public/Content_Engagement.webp" alt="" />
+          </div>
+          <div className="box-contents">
+            <p>Drive Engagement</p>
+            <p>
+              Publish relevant, valuable content that keeps your audience
+              engaged and coming back.
+            </p>
+          </div>
+        </div>
+        <div className="first-content-marketing-box">
+          <div className="logo-boxes">
+            <img src="public/Content_Leads.webp" alt="" />
+          </div>
+          <div className="box-contents">
+            <p>Generate Leads</p>
+            <p>
+              Turn visitors into leads with content offers, gated assets, and
+              nurturing workflows.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="content-marketing-third">
+        <div className="button">OUR PROCESS</div>
+        <div className="content-marketing-service-contents">
+          <h2>How we build content strategies that convert:</h2>
+          <span>
+            Our team combines creativity and data. From research and planning to
+            creation, publishing, and reporting — we handle it all, so you get
+            clear, consistent results.
+          </span>
+        </div>
+      </div>
+
+      <div className="content-marketing-steps">
+        <div className="steps">
+          <h2>Research</h2>
+          <p>
+            We analyze your audience, competitors, and keywords to uncover
+            content opportunities.
           </p>
         </div>
         <div className="steps">
-          <h2>03 Execution</h2>
+          <h2>Plan</h2>
           <p>
-            Now it’s time to buckle in and start executing. We design and
-            develop all strategies to ensure they are tailored to meet your
-            goals. You’ll be kept up to speed on our progress as well as results
-            during monthly, weekly, and day-to-day meetings and check-ins.
+            We map out a clear content calendar and strategy aligned with your
+            business goals.
           </p>
         </div>
         <div className="steps">
-          <h2>Implementation & Results</h2>
+          <h2>Create</h2>
           <p>
-            The first foundational changes, informed by detailed analysis, set
-            the stage for future A/B testing. While you enjoy the increased cash
-            flow, we tweak and test, analyze the results, implement the winning
-            variant, and repeat the process for continuous incremental growth.
+            Our writers and designers produce compelling content that educates,
+            informs, and inspires action.
+          </p>
+        </div>
+        <div className="steps">
+          <h2>Measure</h2>
+          <p>
+            We track performance and refine your strategy based on real data and
+            results.
           </p>
         </div>
       </div>
 
-      <div className="forth-page-cro">
+      <div className="content-marketing-forth-page">
         <div className="forth-left">
-          <button className="tag-button">WHY POWER</button>
+          <button className="tag-button">WHY CONTENT</button>
           <h2>
-            Get an in-depth audit of your site’s performance and user
-            experience.
+            Our full-service content marketing drives traffic, engagement, and
+            growth.
           </h2>
-          <button className="cta-button">Get a free marketing audit →</button>
+          <button className="cta-button">Get a Free Strategy Call →</button>
         </div>
 
         <div className="forth-right">
-          <h3>What you’ll receive:</h3>
-          <ul>
-            <li>
-              <strong style={{ fontSize: '24px' }}>
-                User Journey Analysis
-              </strong>
-              <br />
-              Identify drop-offs and understand where and why they occur in your
-              conversion funnel to improve the user journey and boost conversion
-              rates.
-            </li>
-            <li>
-              <strong style={{ fontSize: '24px' }}>Scroll Percentage</strong>
-              <br />
-              Measure website visitor interest through scroll depth.
-            </li>
-            <li>
-              <strong style={{ fontSize: '24px' }}>CTAs and Forms</strong>
-              <br />
-              Ensure leads aren’t quitting before they start.
-            </li>
-            <li>
-              <strong style={{ fontSize: '24px' }}>Messaging</strong>
-              <br />
-              See whether your copy makes leads care or click off.
-            </li>
-            <li>
-              <strong style={{ fontSize: '24px' }}>Mobile Optimization</strong>
-              <br />
-              Because most of your customers see your site on their phones.
-            </li>
-            <li>
-              <strong style={{ fontSize: '24px' }}>
-                Layout and Navigation
-              </strong>
-              <br />
-              Ensure your site isn’t a confusing maze to customers.
-            </li>
-          </ul>
+          <h3>
+            We deliver end-to-end content marketing services — from research and
+            planning to publishing and promotion.
+          </h3>
+          <h3>
+            Our dedicated team manages every detail to ensure your content
+            attracts, engages, and converts your ideal audience.
+          </h3>
         </div>
       </div>
 
-      <div className="fifth-page">
-        <div className="fifth-left">
-          <button className="tag-button">LEARN MORE</button>
-          <h2>Learn more about CRO.</h2>
+      <div className="content-marketing-fifth-page">
+        <div className="content-marketing-fifth-left">
+          <button className="content-marketing-tag-button">LEARN MORE</button>
+          <h2>Learn more about content marketing.</h2>
           <p>
-            Dive into the world of CRO and discover how our tailored strategies
-            can bridge the gap between traffic and revenue. Learn about the
-            tools, processes, and expertise we bring to the table, all designed
-            to transform your website into a conversion powerhouse.
+            Get answers to common questions about how we make content marketing
+            work for your business.
           </p>
         </div>
 
-        <div className="fifth-right">
+        <div className="content-marketing-fifth-right">
           {faqData.map((faq, index) => (
             <div
-              className={`faq-item ${activeIndex === index ? 'active' : ''}`}
+              className={`content-marketing-faq-item ${
+                activeIndex === index ? 'active' : ''
+              }`}
               key={index}
             >
-              <div className="faq-question" onClick={() => handleToggle(index)}>
+              <div
+                className="content-marketing-faq-question"
+                onClick={() => handleToggle(index)}
+              >
                 <h4>{faq.question}</h4>
                 <span className="arrow">
                   {activeIndex === index ? '▲' : '▼'}
                 </span>
               </div>
               {activeIndex === index && (
-                <div className="faq-answer">
+                <div className="content-marketing-faq-answer">
                   <p>{faq.answer}</p>
                 </div>
               )}
@@ -299,9 +227,8 @@ const Cro = () => {
           ))}
         </div>
       </div>
-      <Footer />
     </>
   );
 };
 
-export default Cro;
+export default ContentMarketing;
